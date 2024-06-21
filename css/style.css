@@ -1,0 +1,100 @@
+:root {
+    --text-color: #95E1D3;
+    --title-color:  #F38181;
+    --hero-color: #333;
+    --description-color: #B6B6B6;
+}
+
+.container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 1px solid red ;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+   font-family: "Montserrat";
+}
+
+/* Хедер */
+
+.box {
+    display: flex;
+    justify-content: center;
+      padding-top: 19px;
+    padding-bottom: 24px;
+}
+
+.header-logo {
+    color: var(--text-color);
+font-size: 30px;
+font-weight: 700;
+line-height: 1.23;
+}
+
+.header-list {
+    display: flex;
+    gap: 55px;
+    margin-left: 632px;
+}
+
+.header-link {
+    color: var(--text-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.21;
+align-items: center;
+}
+
+.curent {
+    color: var(--title-color);
+}
+
+.color {
+    width: 50px;
+height: 3px;
+background-color: var(--title-color);
+margin-top: 10px;
+}
+
+.header-link:hover, .header-link:focus {
+    color: var(--title-color);
+}
+
+.hero-text {
+    color: var(--hero-color);
+font-family: "Kaushan Script";
+font-size: 24px;
+font-weight: 400;
+}
+
