@@ -56,6 +56,7 @@ body {
 .box {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header-logo {
@@ -79,15 +80,17 @@ line-height: 1.21;
 align-items: center;
 }
 
-.curent {
-    color: var(--title-color);
+.curent::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 10px;
+  background: var(--title-color);
 }
 
-.color {
-    width: 50px;
-height: 3px;
-background-color: var(--title-color);
-margin-top: 10px;
+.curent {
+    color: var(--title-color);
 }
 
 .header-link:hover, .header-link:focus {
@@ -99,6 +102,7 @@ margin-top: 10px;
   padding-top: 61px;
   padding-bottom: 61px;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)) url(../img/fons.jpg);
 }
 
 
@@ -203,8 +207,8 @@ line-height: 1.46;
 font-size: 30px;
 font-weight: 700;
 line-height: 1.23;
-padding-top: 17px;
-padding-bottom: 36px;
+margin-top: 17px;
+margin-bottom: 36px;
  }
 
  .team-description {
@@ -214,7 +218,7 @@ font-size: 15px;
 font-weight: 400;
 line-height: 1.2;
 width: 1104px;
-padding-top: 45px;
+margin-top: 45px;
 margin-right: auto;
 margin-left: auto;
  }
@@ -237,7 +241,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.21;
 padding-top: 30px;
-padding-bottom: 11px;
+margin-bottom: 11px;
 }
 
 .piople-desk {
@@ -255,12 +259,13 @@ line-height: 1.2;
 }
 
 .footer-text {
+  width: 400px;
   color: var(--hero-color);
 font-size: 14px;
 font-weight: 400;
 line-height: 1.14;
 margin-right: 523px;
-width: 297px;
+
 }
 
 .footer-span {
@@ -270,6 +275,10 @@ font-weight: 400;
 line-height: 1.14;
 }
 
+.form {
+  display: flex;
+}
+
 .form-input {
   color: var(--description-color);
 font-family: "Roboto";
@@ -277,7 +286,10 @@ font-size: 14px;
 font-style: italic;
 font-weight: 300;
 line-height: 1.14;
+padding: 12px 145px 11px 10px;
 width: 230px;
+height: 39px;
+
 }
  
 .form-btn {
@@ -285,6 +297,7 @@ width: 230px;
 text-align: center;
 font-size: 14px;
 font-weight: 700;
+border: 0;
 line-height: 1.14;
 background-color: var(--text-color);
 padding: 11px 38px 12px;
