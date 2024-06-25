@@ -11,7 +11,7 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 1px solid red ;
+  /* outline: 1px solid red ; */
 }
 
 *,
@@ -240,7 +240,7 @@ text-align: center;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.21;
-padding-top: 30px;
+margin-top: 30px;
 margin-bottom: 11px;
 }
 
@@ -254,8 +254,20 @@ line-height: 1.2;
 }
 
 /* Футер  */
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background: var(--description-color);
+ margin-right: auto;
+ margin-left: auto;
+}
+
 .footer-box {
   display: flex;
+  justify-content: center;
 }
 
 .footer-text {
@@ -265,7 +277,8 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.14;
 margin-right: 523px;
-
+margin-top: 22px;
+margin-bottom: 10px;
 }
 
 .footer-span {
@@ -289,6 +302,7 @@ line-height: 1.14;
 padding: 12px 145px 11px 10px;
 width: 230px;
 height: 39px;
+margin-top: 10px;
 
 }
  
@@ -301,6 +315,7 @@ border: 0;
 line-height: 1.14;
 background-color: var(--text-color);
 padding: 11px 38px 12px;
+margin-top: 9px;
 }
 
 
